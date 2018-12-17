@@ -1,2 +1,1 @@
-# intec-cnx
-Intec Connections Customisations
+# Intec Connections Customisations
