@@ -14,30 +14,32 @@ if (typeof (dojo) != "undefined") {
 	);
 
 	var labels = dojo.query("label[for='faxNumber']");
-	if (typeof (labels) != 'undefined') {
-		labels[0].innerHTML = "NO FAXES";
+	alert(labels.length > 0);
+	if (labels.length > 0) {
+	  var row = labels[0].parentNode.parentNode;
+	  row.style.display = "none";
 	} else {
-		unsafeWindow.console.log('Query failed');
+	  console.log('Query failed');
 	}
-
+	
 	var selects = dojo.query("select[id='phone1.label']");
-	if (typeof (selects) != 'undefined') {
-		var opts = selects[0].options;
-		opts.length = 0;
-		opts[0] = new Option("PS Team", "PS Team", true, false);
-		opts[1] = new Option("Sales", "Sales", false, false);
-		opts[2] = new Option("Finance / HR", "FinHR", false, false);
+	if (selects.length > 0) {
+	  var opts = selects[0].options;
+	  opts.length = 0;
+	  opts[0] = new Option("PS Team","PS Team",true, false);
+	  opts[1] = new Option("Sales","Sales",false, false);
+	  opts[2] = new Option("Finance / HR","FinHR",false, false);
 	} else {
-		unsafeWindow.console.log('Query failed');
+	  console.log('Query failed');
 	}
-
+	
 	for (var i = 2; i < 4; i++) {
-		var phoneElems = dojo.query("select[id='phone" + i + ".label']");
-		if (typeof (phoneElems) != undefined) {
-			var row = phoneElems[0].parentNode.parentNode;
-			row.style.display = "none";
-		} else {
-			unsafeWindow.console.log('Query failed');
-		}
+	  var phoneElems = dojo.query("select[id='phone" + i + ".label']");
+	  if (phoneElems.length > 0) {
+		var row = phoneElems[0].parentNode.parentNode;
+		row.style.display = "none";
+	  } else {
+		console.log('Query failed');
+	  }
 	}
 }
