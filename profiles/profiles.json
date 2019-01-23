@@ -4,7 +4,7 @@
 		"application": "Profiles Customization Sample",
 		"payload": {
 		  "include-files": [
-			"profiles/profilesCustomization.css"
+			"profiles/profilesCustomization.js"
 		  ],
 		  "include-repo": {
 			"name": "intec-cnx"
