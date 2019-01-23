@@ -14,7 +14,6 @@ if (typeof (dojo) != "undefined") {
 	);
 
 	var labels = dojo.query("label[for='faxNumber']");
-	alert(labels.length > 0);
 	if (labels.length > 0) {
 	  var row = labels[0].parentNode.parentNode;
 	  row.style.display = "none";
