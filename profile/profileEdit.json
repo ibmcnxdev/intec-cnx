@@ -1,0 +1,30 @@
+{
+	"extensions": [
+	  {
+		"application": "Profiles Fax Edit Mode",
+		"payload": {
+		  "include-files": [
+			"profile/profileReplaceFaxEdit.js"
+		  ],
+		  "include-repo": {
+			"name": "intec-cnx"
+		  },
+		  "cache-headers": {
+			"cache-control": "max-age=0"
+		  },
+		  "match": {
+			"url": "editMyProfileView.do"
+		  }
+		},
+		"name": "Profiles Fax Edit Mode",
+		"type": "com.ibm.customizer.ui",
+		"path": "profiles"
+	  }
+	],
+	"name": "Profiles Fax Edit Mode",
+	"description": "Manipulation of Fax Field Edit Mode",
+	"title": "Profiles Fax Edit Mode",
+	"services": [
+	  "Customizer"
+	]
+  }
