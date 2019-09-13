@@ -1,0 +1,30 @@
+{
+	"extensions": [
+	  {
+		"application": "Profiles Fax Read Mode",
+		"payload": {
+		  "include-files": [
+			"profile/profileReplaceFaxRead.js"
+		  ],
+		  "include-repo": {
+			"name": "intec-cnx"
+		  },
+		  "cache-headers": {
+			"cache-control": "max-age=0"
+		  },
+		  "match": {
+			"url": "profileDetails.do"
+		  }
+		},
+		"name": "Profiles Fax Read Mode",
+		"type": "com.ibm.customizer.ui",
+		"path": "profiles"
+	  }
+	],
+	"name": "Profiles Fax Read Mode",
+	"description": "Manipulation of Fax Field Read Mode",
+	"title": "Profiles Fax Read Mode",
+	"services": [
+	  "Customizer"
+	]
+  }
