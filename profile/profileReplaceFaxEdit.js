@@ -11,7 +11,7 @@ if (typeof (dojo) != "undefined") {
     // Change fax number label
 	var faxNo = dojo.query("label[for='faxNumber']");
 	if (faxNo.length > 0) {
-	  faxNo.innerHTML = "NMC / HCPC";
+	  faxNo[0].innerHTML = "NMC / HCPC";
 	} else {
 	  console.log('Query failed');
 	}
